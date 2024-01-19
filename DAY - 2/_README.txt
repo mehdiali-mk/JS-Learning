@@ -21,7 +21,7 @@ Decrement (--).
 
 ==========================================
 
-# Comparison Operators
+# Comparison Operators.
 
 Equal to ==
 Not equal to !=
