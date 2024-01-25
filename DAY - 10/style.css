@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 60%;
+  text-align: center;
+}
+
+.secondary-heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.append-btn {
+  padding: 1.2rem 2.4rem;
+  color: black;
+  border: 3px solid black;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.8rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  font-weight: 700;
+}
+
+.append-btn:hover {
+  background-color: black;
+  color: yellow;
+  box-shadow: 0px 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.2);
+}
