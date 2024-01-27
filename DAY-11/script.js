@@ -17,7 +17,9 @@ h3El.innerText = h1El.innerText;
 h1El.after(h3El);
 h1El.remove();
 
-// Qs. Create a new button element. Give it a text “click me”, background color of red & text color of white. Insert the button as the first element inside the body tag.
+/*
+Qs. Create a new button element. Give it a text “click me”, background color of red & text color of white. Insert the button as the first element inside the body tag.
+*/
 
 const bodyEl = document.querySelector("body");
 const btnEl = document.createElement("button");
