@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  ); */
+  background-color: #191825;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-heading {
+  font-size: 4.8rem;
+  color: white;
+  text-align: center;
+  padding-top: 2.4rem;
+  position: fixed;
+  top: 2rem;
+  color: #f7d71e;
+}
+
+.game {
+  /* width: 25%;
+  height: 50%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  /* background-color: #004d7a86; */
+  padding: 1.2rem;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  border-radius: 2.4rem;
+  -webkit-border-radius: 2.4rem;
+  -moz-border-radius: 2.4rem;
+  -ms-border-radius: 2.4rem;
+  -o-border-radius: 2.4rem;
+  border: none;
+  background-color: white;
+  font-size: 3.6rem;
+  color: #191825;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #f7d71e;
+  font-weight: 600;
+  scale: 1.03;
+}
+
+.mk-link {
+  position: fixed;
+  bottom: 4rem;
+  cursor: pointer;
+}
+
+.mk-logo {
+  width: 100px;
+}
