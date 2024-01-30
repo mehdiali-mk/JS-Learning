@@ -29,6 +29,54 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.message-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0ec;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.message {
+  width: 50%;
+  text-align: center;
+  font-size: 8rem;
+  color: #191825;
+}
+
+.new-btn {
+  padding: 1.2rem 2.8rem;
+  background-color: #191825;
+  color: #f7d71e;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+  cursor: pointer;
+  border: none;
 }
 
 .primary-heading {
@@ -52,8 +100,8 @@ body {
 }
 
 .box {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 2.4rem;
   -webkit-border-radius: 2.4rem;
   -moz-border-radius: 2.4rem;
@@ -90,3 +138,24 @@ body {
 .mk-logo {
   width: 100px;
 }
+
+.actions {
+  margin-top: 2.4rem;
+  text-align: center;
+}
+
+.reset-btn {
+  padding: 1.2rem 2.8rem;
+  background-color: #f7d71e;
+  font-size: 1.8rem;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+  cursor: pointer;
+}
+/* 
+.box-disable {
+  background-color: #f7d71e91;
+} */
