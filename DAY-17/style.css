@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #191825;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.primary-heading {
+  font-size: 4.8rem;
+  margin-top: 2.4rem;
+  color: #f7d71e;
+}
+
+.emoji-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+}
+
+.emoji-div {
+  margin-top: 2.4rem;
+  font-size: 3.6rem;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 0.5rem solid #f7d71e;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+}
+
+.emoji-div:hover {
+  scale: 1.1;
+}
+
+.score-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+  text-align: center;
+  margin-top: 2.4rem;
+  padding: 2.4rem;
+}
+
+.score {
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.score-number {
+  color: #f7d71e;
+  font-weight: 900;
+  font-size: 4.8rem;
+}
+.score-name {
+  margin-top: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.score-emoji {
+  margin-top: 2.4rem;
+  font-size: 3rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: transparent;
+  border: 0.3rem solid #f7d71e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
+
+.emoji-text {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.final-result {
+  margin-top: 0.8rem;
+  padding: 1.2rem 3.6rem;
+  border-radius: 1rem;
+  background-color: #f7d71e;
+  color: #191825;
+  font-size: 3.6rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.mk-link {
+  position: fixed;
+  bottom: 4rem;
+  cursor: pointer;
+}
+
+.mk-logo {
+  width: 100px;
+}
