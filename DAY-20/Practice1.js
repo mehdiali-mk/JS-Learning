@@ -27,3 +27,10 @@ student1.viewData();
 admin1.viewData();
 admin1.editData("Mehdiali", "mehdialikadiwala@gmail.com");
 admin1.viewData();
+
+const id = Symbol("123");
+const anotherID = Symbol("123");
+
+console.log(id);
+console.log(anotherID);
+console.log(id == anotherID);
