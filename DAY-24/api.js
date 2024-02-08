@@ -7,18 +7,12 @@ const randomNumber = () => {
 };
 
 const getData = async () => {
-  console.log("Getting data... Please wait...");
+  // console.log("Getting data... Please wait...");
   factParaEl.textContent = "Getting data... Please wait...";
   let response = await fetch(apiURL);
-  console.log(response);
+  // console.log(response);
   let data = await response.json();
   factParaEl.textContent = data[randomNumber()].text;
-  // console.log(data);
-  // console.log(data[0].text);
-  // console.log(data[1].text);
-  // console.log(data[2].text);
-  // console.log(data[3].text);
-  // console.log(data[4].text);
 };
 
 btnFactEl.addEventListener("click", getData);
