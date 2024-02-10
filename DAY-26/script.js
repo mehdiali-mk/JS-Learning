@@ -62,10 +62,7 @@ const updateExchangeRate = async () => {
     inputAmountVal = Math.abs(inputAmountVal);
     inputAmountEl.value = inputAmountVal;
   }
-  console.log(inputAmountVal);
-  console.log(fromCurrencyEl.value, toCurrencyEl.value);
   const URL = `${currencyApiUrl}${fromCurrencyEl.value.toLowerCase()}/${toCurrencyEl.value.toLowerCase()}.json`;
-  console.log(URL);
 
   let response = await fetch(URL);
   let data = await response.json();
