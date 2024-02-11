@@ -1,3 +1,3 @@
-# >>==>> DAY - 25.
+# >>==>> DAY - 26.
 
-# Currency converter project using API.
+# Currency converter project using API (Implementing Logic).
