@@ -10,7 +10,6 @@ buttonEl.addEventListener("click", (evt) => {
     .split("")
     .reverse()
     .toString()
-    .toUpperCase()
     .replaceAll(",", "");
 
   if (value == palindromeValue) {
