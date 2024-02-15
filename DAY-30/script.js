@@ -5,7 +5,6 @@ const password = "!@#$%^&**()_+{}|1234567890ABCDEFG";
 let newPassword = "Password";
 const generatePassword = () => {
   newPassword = Math.random().toString(22).substring(2, 14).toUpperCase();
-  console.log(newPassword);
   replaceCharacter();
 };
 
