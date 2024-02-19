@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="main-container">
+        <div class="heading-div">
+          <h1 class="primary-heading">Tip Calculator</h1>
+        </div>
+        <div class="content">
+          <div class="input-div">
+            <label for="bill-amount" class="label bill-amount-label"
+              >Bill:</label
+            >
+            <input
+              type="number"
+              name="bill-amount"
+              id="bill-amount"
+              class="input bill-amount-input"
+              placeholder="Enter bill amount"
+            />
+          </div>
+          <div class="input-div">
+            <label for="rate-service" class="label rate-service-label"
+              >Rate Service:</label
+            >
+            <select
+              name="rate-service"
+              id="rate-service"
+              class="input rate-service-select"
+            >
+              <option value="" disabled selected class="rate-service-option">
+                -- Select an Option --
+              </option>
+              <option value="0.15" class="rate-service-option">
+                15% - Excellent
+              </option>
+              <option value="0.10" class="rate-service-option">
+                10% - Good
+              </option>
+              <option value="0.05" class="rate-service-option">
+                5% - Fair
+              </option>
+            </select>
+          </div>
+
+          <button class="calculate-btn">Calculate</button>
+          <p class="error">Please enter bill and rate service.</p>
+          <div class="result-div">
+            <p class="result-p result-tip"></p>
+            <p class="result-p result-amount"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
