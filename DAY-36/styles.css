@@ -48,6 +48,9 @@ img {
 header {
   width: 100%;
   background-color: var(--dark-grey);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 nav {
@@ -112,7 +115,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 2.4rem;
 }
 

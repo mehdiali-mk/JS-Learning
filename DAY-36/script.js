@@ -7,7 +7,7 @@ for (link of links) {
 function smoothScroll(e) {
   e.preventDefault();
   const href = this.getAttribute("href");
-  document.querySelector(href).scrollIntoView({
+  document.querySelector(`${href}`).scrollIntoView({
     behavior: "smooth",
   });
 }
