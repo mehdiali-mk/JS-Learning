@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* width: 100vw; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.background {
+  color: #f7d71e;
+  width: 100%;
+  height: 300vh;
+  background-color: #191825;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.main-container {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  position: relative;
+}
+
+.primary-heading {
+  font-size: 4.8rem;
+  margin-top: 3.6rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin-top: 3.6rem;
+  font-size: 1.6rem;
+}
+
+.arrow {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 2px solid #f7d71e;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  position: absolute;
+  bottom: 3.6rem;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  animation: bounce 1.5s infinite;
+  -webkit-animation: bounce 1.5s infinite;
+}
+
+.arrow::before {
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  border-left: 2px solid #f7d71e;
+  border-bottom: 2px solid #f7d71e;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 3.6rem;
+  }
+  40% {
+    bottom: 5.2rem;
+  }
+  80% {
+    bottom: 3.6rem;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+}
