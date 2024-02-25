@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  /* width: 40%; */
+  padding: 2.4rem;
+  height: 50%;
+  background-color: #191825;
+  box-shadow: 1.2rem 2.4rem 2.4rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  color: #f7d71e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: center;
+}
+.progress-container {
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.2rem;
+  position: relative;
+}
+
+.progress-bar {
+  /*padding: 3px 1%;
+  */
+  height: 5px;
+  width: 0%;
+  background-color: #f7d71e;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.progress-bar-background {
+  /* padding: 3px 1%; */
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.progress-circle {
+  height: 4.8rem;
+  width: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #191825;
+  color: #fff;
+  border: 5px solid #fff;
+  font-weight: 700;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  z-index: 10;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.active {
+  border-color: #f7d71e;
+  color: #f7d71e;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.button {
+  font-size: 1.8rem;
+  padding: 2.4rem;
+  background-color: #f7d71e;
+  color: #191825;
+  font-weight: 700;
+  margin-top: 3.6rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: 5px solid #f7d71e;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.disable {
+  background-color: #191825;
+  border: 5px solid #f7df1e;
+  cursor: no-drop;
+}
+
+.sub-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-bottom: 2px solid #191825;
+  border-left: 2px solid #191825;
+  transform: rotate(45deg) translate(-50%, -10%);
+  -webkit-transform: rotate(45deg) translate(-50%, -10%);
+  -moz-transform: rotate(45deg) translate(-50%, -10%);
+  -ms-transform: rotate(45deg) translate(-50%, -10%);
+  -o-transform: rotate(45deg) translate(-50%, -10%);
+}
+
+.next-btn {
+  transform: rotate(-135deg) translate(80%, -20%);
+  -webkit-transform: rotate(-135deg) translate(80%, -20%);
+  -moz-transform: rotate(-135deg) translate(80%, -20%);
+  -ms-transform: rotate(-135deg) translate(80%, -20%);
+  -o-transform: rotate(-135deg) translate(80%, -20%);
+}
