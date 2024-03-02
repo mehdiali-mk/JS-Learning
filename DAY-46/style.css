@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
 
 :root {
-  --gradient: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+  --gradient: #191825;
 }
 
 * {
@@ -117,6 +117,8 @@ body {
   padding: 15px;
   margin: 0 25px 25px 25px;
   box-shadow: 0 0 50px -5px rgba(0, 0, 0);
+  background-color: #f7d71e;
+  color: #191825;
   border-radius: 10px;
 }
 
@@ -131,6 +133,7 @@ body {
 
 .today-info > div .value {
   float: right;
+  font-weight: 700;
 }
 
 .week-list {
@@ -151,8 +154,8 @@ body {
 
 .week-list > li:hover {
   transform: scale(1.1);
-  background: #fff;
-  color: #222831;
+  background: #f7d71e;
+  color: #191825;
   box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
 }
 
@@ -202,7 +205,9 @@ body {
   border-radius: 25px;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
-  background-image: var(--gradient);
+  /* background-image: var(--gradient); */
+  background-color: #f7d71e;
+  outline: none;
   color: #000000;
   font-weight: 700;
   box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
