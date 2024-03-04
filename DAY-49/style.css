@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #191825;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 6rem;
+  background: #f7d71e;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.container h2 {
+  color: #191825;
+  font-family: sans-serif;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f7d71e;
+  border: none;
+  border: 2px solid #191825;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  outline: none;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.input-container input::placeholder {
+  color: #1918259d;
+}
+
+button {
+  padding: 15px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  color: #191825;
+  border: none;
+  border: 3px solid #191825;
+  font-size: 1.2rem;
+  margin: 10px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+button:hover {
+  background-color: #191825;
+  color: #fff;
+}
+
+button:active {
+  transform: translateY(0.5rem) scale(0.96);
+  -webkit-transform: translateY(0.5rem) scale(0.96);
+  -moz-transform: translateY(0.5rem) scale(0.96);
+  -ms-transform: translateY(0.5rem) scale(0.96);
+  -o-transform: translateY(0.5rem) scale(0.96);
+}
+
+p {
+  width: 600px;
+  height: 600px;
+  background: #191825;
+  color: #f7d71e;
+  height: 80px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
