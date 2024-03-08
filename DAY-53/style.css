@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #191825;
+}
+
+.clock {
+  font-size: 8rem;
+  color: #f7d71e;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+  cursor: not-allowed;
+  user-select: none;
+}
