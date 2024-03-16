@@ -1,20 +1,43 @@
-const followersEl = document.querySelectorAll(".followers");
+const inputItemEl = document.querySelector(".input-item");
+const buttonEl = document.querySelector(".button");
+const dataListEl = document.querySelector(".data-list");
 
-followersEl.forEach((followerCounter) => {
-  followerCounter.innerHTML = "0";
+const listLimit = 12;
 
-  const updateFolllowersCounter = () => {
-    const target = +followerCounter.getAttribute("data-target");
-    const c = +followerCounter.innerText;
-    const increment = target / 500;
+const addNewItem = (newItem) => {
+  const newList = document.createElement("li");
+  newList.classList.add("data-item");
+  newList.textContent = newItem;
+  dataListEl.appendChild(newList);
+  inputItemEl.value = "";
+};
 
-    if (c < target) {
-      followerCounter.innerHTML = `${Math.ceil(c + increment)}`;
-      setTimeout(updateFolllowersCounter, 0.5);
-    } else {
-      followerCounter.innerText = target;
-    }
-  };
+const isListFull = () => {
+  const listItems = dataListEl.childNodes.length - 2;
+  if (listItems > listLimit) {
+    inputItemEl.value = "";
+    alert("List is Full.");
+    return false;
+  } else {
+    return true;
+  }
+};
 
-  updateFolllowersCounter();
+buttonEl.addEventListener("click", () => {
+  const newItem = inputItemEl.value;
+  if (newItem.length > 0 && isListFull() && newItem.trim() !== "") {
+    addNewItem(newItem);
+  }
+});
+
+inputItemEl.addEventListener("keypress", (event) => {
+  const newItem = inputItemEl.value;
+  if (
+    newItem.length > 0 &&
+    event.keyCode === 13 &&
+    isListFull() &&
+    newItem.trim() !== ""
+  ) {
+    addNewItem(newItem);
+  }
 });
