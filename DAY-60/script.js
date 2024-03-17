@@ -1,7 +1,7 @@
 const followersEl = document.querySelectorAll(".followers");
 
 followersEl.forEach((followerCounter) => {
-  followerCounter.innerHTML = "0";
+  followerCounter.textContent = "0";
 
   const updateFolllowersCounter = () => {
     const target = +followerCounter.getAttribute("data-target");
@@ -12,7 +12,7 @@ followersEl.forEach((followerCounter) => {
       followerCounter.innerHTML = `${Math.ceil(c + increment)}`;
       setTimeout(updateFolllowersCounter, 0.5);
     } else {
-      followerCounter.innerText = target;
+      followerCounter.textContent = target;
     }
   };
 
