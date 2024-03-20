@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY 65 - Double sided form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="main-container">
+        <div class="signup-div">
+          <span>Not a member?</span>
+          <button type="button" class="signup-button">Sign Up</button>
+        </div>
+        <div class="login-div">
+          <span>Already Have an Account?</span>
+          <button type="button">Login</button>
+        </div>
+
+        <div class="back-layer">
+          <form action="" class="login-form active">
+            <h2 class="login-label">Login</h2>
+            <input type="email" id="lemail" placeholder="Email" />
+            <input type="password" id="lpassword" placeholder="Password" />
+            <button type="button">Login</button>
+          </form>
+
+          <form action="" class="signup-form">
+            <h2 class="login-label">Sign Up</h2>
+            <input
+              type="text"
+              name="f-name"
+              id="f-name"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="l-name"
+              id="l-name"
+              placeholder="Last Name"
+            />
+            <input type="email" id="semail" placeholder="Email" />
+            <input type="password" id="spassword" placeholder="Password" />
+            <button type="button">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
