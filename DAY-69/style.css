@@ -1,0 +1,208 @@
+:root {
+  --light-bg: #fff;
+  --light-primary: rgb(247, 249, 250);
+  --light-secondary: rgb(240, 242, 243);
+  --light-divider: rgb(235, 237, 238);
+
+  --dark-bg: #000;
+  --dark-primary: #15181c;
+  --dark-secondary: #2f3336;
+  --dark-divider: #2f3336;
+
+  --highlight-color: rgb(29, 155, 250);
+}
+
+.light-theme {
+  --background-color: var(--light-bg);
+  --background-primary: var(--light-primary);
+  --background-secondary: var(--light-secondary);
+  --divider: var(--light-divider);
+}
+
+.dark-theme {
+  --background-color: var(--dark-bg);
+  --background-primary: var(--dark-primary);
+  --background-secondary: var(--dark-secondary);
+  --divider: var(--dark-divider);
+  color: white !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* display: table; */
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  /* display: table-cell;
+  vertical-align: middle;
+  horizontal-align: middle; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--background-color);
+}
+
+.card {
+  background-color: var(--background-primary);
+  height: auto;
+  width: 380px;
+  margin: 0 auto;
+  border-radius: 2.4rem;
+  -webkit-border-radius: 2.4rem;
+  -moz-border-radius: 2.4rem;
+  -ms-border-radius: 2.4rem;
+  -o-border-radius: 2.4rem;
+  box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.2),
+    0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  border-top: 1px solid var(--divider);
+}
+
+.profile {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-items: stretch;
+  justify-content: space-between;
+}
+
+.profile:hover,
+.show-more:hover {
+  background-color: var(--background-secondary);
+}
+
+.profile-pic {
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.pic-one {
+  background: url(pic1.jpg);
+}
+.pic-two {
+  background: url(pic2.jpg);
+}
+.pic-three {
+  background: url(pic3.jpg);
+}
+.pic-four {
+  background: url(pic4.jpg);
+}
+
+.profile-info {
+  padding: 0 1rem;
+  flex-grow: 1;
+}
+
+.display-name,
+.username {
+  display: block;
+}
+
+.display-name {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.username {
+  color: rgb(155, 153, 153);
+}
+
+.username::before {
+  content: "@";
+}
+
+.follow-button {
+  background-color: inherit;
+  border: 1px solid var(--highlight-color);
+  border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+  color: var(--highlight-color);
+  padding: 6px 16px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.followed {
+  background-color: var(--highlight-color);
+  color: #fff;
+}
+
+.show-more {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  display: block;
+  padding: 1.5rem 2rem 2rem 2rem;
+  text-decoration: none;
+  color: var(--highlight-color);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.show-more:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-changer {
+  background-color: var(--background-primary);
+  color: inherit;
+  outline: none;
+  border: none;
+  position: fixed;
+  top: 2.4rem;
+  right: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+  box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.2),
+    0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
